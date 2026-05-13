@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Data Deletion — DotTracks</title>
+  <meta name="description" content="How to delete your DotTracks data — in-app, post-uninstall email procedure, and what we can and cannot delete.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <a href="/" class="wordmark"><span class="accent">DOT</span>TRACKS</a>
+      <nav class="nav">
+        <a href="/privacy">Privacy</a>
+        <a href="/impressum">Impressum</a>
+        <a href="/tos">Terms</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <article class="container">
+      <h1>Data Deletion</h1>
+
+      <p><strong>Effective date:</strong> 2026-05-13<br>
+      <strong>Last updated:</strong> 2026-05-13</p>
+
+      <p>This page explains how to delete your data from DotTracks. For the
+      full Privacy Policy, see <a href="/privacy">/privacy</a>.</p>
+
+      <h2>1. How to delete your data</h2>
+
+      <p><strong>In-app (recommended).</strong> Open DotTracks →
+      <strong>Profile</strong> (top-right icon) →
+      <strong>Delete account &amp; data</strong> → Confirm. This deletes your
+      pseudonymous Firebase user ID, all cloud-saved progress, and clears
+      local app data within seconds.</p>
+
+      <p>Tapping "Delete account &amp; data" immediately clears local app data
+      on your device and initiates the server-side deletion of your
+      pseudonymous Firebase user ID and the cloud-saved progress linked to it.
+      Server-side deletion is normally completed without undue delay and in
+      any event within 30 days.</p>
+
+      <h2>2. If you have already uninstalled the app</h2>
+
+      <p>If you have already uninstalled DotTracks and cannot use the in-app
+      deletion flow:</p>
+
+      <ul>
+        <li>Email <a href="mailto:hello.dottrack@outlook.com">hello.dottrack@outlook.com</a></li>
+        <li>Include your <strong>pseudonymous Firebase user ID</strong> if you
+        noted it before uninstall (it was visible in
+        <strong>Profile → About</strong> in the app).</li>
+        <li>Without the ID we may be unable to identify and delete your data,
+        as we hold no other identifiers (no name, email, or device info linked
+        to you).</li>
+        <li>We respond within 30 days under GDPR / UK GDPR / Swiss FADP.</li>
+      </ul>
+
+      <h2>3. What gets deleted</h2>
+
+      <ul>
+        <li>Pseudonymous Firebase Authentication user (UID).</li>
+        <li>Cloud-saved gameplay progress
+        (Firestore: <code>users/{uid}/progress/completed</code>).</li>
+        <li>Analytics event-level data linked to that UID, where technically
+        feasible.</li>
+        <li>Backup residual copies are removed according to our backup
+        retention schedule and are not restored.</li>
+      </ul>
+
+      <h2>4. What we cannot delete</h2>
+
+      <ul>
+        <li>Aggregated, non-identifiable analytics reports (cannot be
+        re-linked to a user).</li>
+        <li>Data we are legally required to retain (e.g. tax/accounting if
+        applicable to in-app purchases — not currently applicable since
+        DotTracks is free).</li>
+      </ul>
+
+      <h2>Related</h2>
+
+      <ul>
+        <li><a href="/privacy">Privacy Policy</a></li>
+        <li><a href="/impressum">Impressum</a></li>
+        <li><a href="https://dottracks.app">dottracks.app</a></li>
+      </ul>
+    </article>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div>© 2026 Sierco Böhler</div>
+      <div class="footer-links">
+        <a href="/privacy">Privacy</a>
+        <a href="/impressum">Impressum</a>
+        <a href="/tos">Terms</a>
+        <a href="/delete-data">Delete Data</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
