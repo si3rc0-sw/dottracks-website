@@ -99,6 +99,14 @@
         persistent across app sessions on the same device, it qualifies as
         pseudonymous (not anonymous) personal data under GDPR Art. 4(5).</li>
         <li><strong>Completed level IDs</strong> — which levels you have solved.</li>
+        <li><strong>Firebase Authentication and backend connection data.</strong>
+        Whenever the app communicates with our cloud infrastructure (Firebase
+        Authentication, Cloud Firestore), Google may automatically process
+        technical connection data such as your IP address, user agent strings,
+        and the Firebase Android App ID, to route traffic, authenticate the app
+        instance, prevent abuse, and secure the service. This processing
+        happens for basic app functionality and is not dependent on analytics
+        consent.</li>
         <li><strong>App usage events</strong> (only after analytics opt-in) — screen
         views, basic interaction counters, app version, device model, OS
         version, country, language, approximate location (country and, where
@@ -231,10 +239,18 @@
         Google LLC, or other Google affiliates acting as processors,
         subprocessors, or — for certain service/diagnostic data — independent
         controllers under Google's applicable terms and privacy policy.</li>
-        <li><strong>Legal obligations.</strong> We may disclose data when required to do so
-        by a valid legal instrument (court order, subpoena, or comparable
-        measure issued by a competent Swiss or EU authority). Where lawful,
-        we will notify the affected user in advance.</li>
+        <li><strong>Vercel (website hosting).</strong> Vercel Inc. processes
+        technical access logs and hosting-related data for
+        https://dottracks.app — including IP address, request timestamps, user
+        agent, and error logs — for website hosting, security, availability,
+        and abuse prevention.</li>
+        <li><strong>Legal obligations.</strong> We may disclose data where
+        required by a valid legal obligation, court order, subpoena,
+        regulatory request, or other comparable lawful measure issued by a
+        competent authority — whether in Switzerland, the EU/EEA, the United
+        Kingdom, or another jurisdiction with valid legal authority over us or
+        our processors. Where lawful and feasible, we will notify the affected
+        user in advance.</li>
         <li><strong>Business transfers.</strong> If the controller's activities are succeeded
         by another legal entity (sale, merger, restructuring, or estate
         succession), your data may be transferred to the successor. You will
@@ -274,24 +290,25 @@
         </tbody>
       </table>
 
-      <p>When you request deletion (see "Your rights" below), all data tied to
-      your pseudonymous identifier is removed from Cloud Firestore within
-      30 days. The deletion flow is designed to remove cloud-saved progress
-      linked to the pseudonymous Firebase user ID <strong>first</strong>, then
-      delete the Firebase user ID itself, then clear local app data, and
-      finally generate a fresh anonymous ID so the app keeps working. If a
-      technical issue prevents any step, we will complete deletion within 30
-      days where feasible. Analytics data that has already been aggregated
+      <p>When you use <strong>Profile → Delete account &amp; data</strong>, the
+      app first uses your current pseudonymous Firebase user ID to request
+      server-side deletion of the cloud-saved progress linked to that UID.
+      After the server-side deletion request is submitted, the Firebase user
+      ID is deleted, local app data on the device is cleared, and a fresh
+      anonymous ID is generated so the app keeps working. Server-side deletion
+      is normally completed without undue delay and in any event within 30
+      days, after which backup residual copies are removed per our backup
+      retention schedule. Analytics data that has already been aggregated
       cannot be re-attributed and therefore cannot be selectively deleted, but
       the underlying raw event records expire on the schedule above.</p>
 
       <p><strong>Backup residual data.</strong> Residual copies of deleted
       Personal Data may remain in encrypted Firebase / Google Cloud backups
-      for a limited period consistent with our processors' backup retention
-      schedules. Such residual copies are not actively processed and are not
-      restored except where necessary for security incident response, disaster
-      recovery, or compliance with a legal obligation. They are removed when
-      the relevant backup expires according to the standard schedule.</p>
+      for up to 30 days after deletion (consistent with Cloud Firestore's
+      default Point-in-Time Recovery and managed backup retention). Such
+      residual copies are not actively processed and are not restored except
+      where necessary for security incident response, disaster recovery, or
+      compliance with a legal obligation.</p>
 
       <p><strong>Analytics deletion limits.</strong> Firebase Analytics events
       are linked to Firebase Analytics identifiers (e.g. App Instance ID),
@@ -321,6 +338,10 @@
       (United States) may need to access it for technical support and
       maintenance.</p>
 
+      <p>Our service providers — including Google/Firebase and Vercel — and
+      their subprocessors may process or access personal data from countries
+      outside Switzerland, the EU/EEA, or the UK, including the United States.</p>
+
       <p>Where Google LLC's DPF certification covers the relevant transfer,
       we rely on the applicable EU-US, Swiss-US, or UK Extension to the Data
       Privacy Framework. Where a transfer is not covered by an adequacy
@@ -346,12 +367,15 @@
         <li><strong>Right to erasure</strong> (GDPR Art. 17 / FADP Art. 32(2)) — deletion of
         your data ("right to be forgotten"). In the DotTracks app, you can
         exercise this right directly via <strong>Profile → Delete account &amp; data</strong>.
-        Tapping "Delete account &amp; data" immediately clears local app data on
-        your device and initiates the server-side deletion of your pseudonymous
-        Firebase user ID and the cloud-saved progress linked to it. Server-side
+        When you use <strong>Profile → Delete account &amp; data</strong>, the app
+        first uses your current pseudonymous Firebase user ID to request
+        server-side deletion of the cloud-saved progress linked to that UID.
+        After the server-side deletion request is submitted, the Firebase user
+        ID is deleted, local app data on the device is cleared, and a fresh
+        anonymous ID is generated so the app keeps working. Server-side
         deletion is normally completed without undue delay and in any event
-        within 30 days, after which backup residual copies are removed according
-        to our backup retention schedule.
+        within 30 days, after which backup residual copies are removed per our
+        backup retention schedule.
         <br><br>
         <strong>For users who have already uninstalled the app:</strong> If you
         have uninstalled DotTracks and cannot use the in-app deletion flow, you
@@ -394,7 +418,7 @@
       name or email, we need a way to confirm that a request actually comes
       from the data subject. When you submit a request, we will ask you to
       provide your in-app pseudonymous user ID (you can find it in the app
-      under Settings → About) and may ask for additional reasonable
+      under <strong>Profile → About</strong>) and may ask for additional reasonable
       information to rule out fraudulent or abusive requests. We will not
       use this information for any other purpose and will delete it once
       the request is closed. If we cannot verify your identity within a
@@ -437,14 +461,16 @@
 
       <h2>Children</h2>
 
-      <p>DotTracks is intended for users aged 13 and older and is not directed
-      to children under 13. We do not knowingly collect personal data from
-      children under 13. We do not ask users to provide their age. If we learn
-      that a user is under 13, we will delete data linked to that user unless
-      legally valid parental consent has been obtained. If DotTracks is later
-      offered to children or included in a child-directed store category, we
-      will implement the required parental consent and child-privacy controls
-      before doing so.</p>
+      <p>DotTracks is a <strong>general-audience puzzle game</strong> with
+      abstract visuals (dots, geometric tracks, color theory) and is not
+      directed to children under 13. We do not market DotTracks to children
+      under 13 and do not place it in child-directed store categories. We do
+      not knowingly collect personal data from children under 13. We do not
+      ask users to provide their age. If we learn that a user is under 13, we
+      will delete data linked to that user unless legally valid parental
+      consent has been obtained. If DotTracks is later offered to children or
+      included in a child-directed store category, we will implement the
+      required parental consent and child-privacy controls before doing so.</p>
 
       <p><strong>Analytics and minors.</strong> Analytics is optional and disabled by
       default. If we know that a user is below the age at which they can
@@ -484,12 +510,16 @@
       "Effective date" of this policy, we have not sold or shared your
       personal information in the CCPA sense, and we do not intend to do so.</p>
 
-      <p>Categories of personal information collected: identifiers
-      (pseudonymous Firebase user ID), internet or electronic network activity
-      information (app usage events, if analytics consent is given),
-      approximate location derived from country-level analytics, device and
-      diagnostics information, and gameplay progress. We do not collect
-      sensitive personal information.</p>
+      <p><strong>Categories of personal information collected:</strong>
+      identifiers (pseudonymous Firebase user ID, Firebase Android App ID, App
+      Instance ID where analytics is enabled, and similar app identifiers);
+      internet or electronic network activity information (app usage events
+      where analytics is enabled, and connection metadata such as IP address
+      and user agent strings); approximate location (country and, where
+      available, city, derived from your IP address by Firebase Analytics
+      where enabled); device and technical information (device model,
+      operating system version, app version, IP address, user agent strings);
+      and gameplay progress. We do not collect sensitive personal information.</p>
 
       <p>We do not collect or use sensitive personal information as defined by
       the CCPA/CPRA. Therefore, the right to limit the use and disclosure of
@@ -540,11 +570,16 @@
 
       <p>Several US states have enacted comprehensive privacy laws that grant
       their residents rights similar to those listed above for California.
-      These include, among others: <strong>Colorado (CPA), Connecticut (CTDPA),
-      Virginia (CDPA), Utah (UCPA), Texas (TDPSA), Oregon (OCPA), Montana
-      (MCDPA), New Jersey (NJDPA), Delaware (DPDPA), Tennessee (TIPA),
-      Indiana (CDPA), Iowa (ICDPA), Nebraska (NDPA), New Hampshire (NHDPA),
-      Maryland (MODPA),</strong> and <strong>Minnesota (MCDPA)</strong>.</p>
+      These include, where applicable: Colorado Privacy Act (CPA), Connecticut
+      Data Privacy Act (CTDPA), <strong>Virginia Consumer Data Protection Act
+      (VCDPA)</strong>, Utah Consumer Privacy Act (UCPA), Texas Data Privacy
+      and Security Act (TDPSA), Oregon Consumer Privacy Act (OCPA), Montana
+      Consumer Data Privacy Act (MTCDPA), New Jersey Data Privacy Act (NJDPA),
+      Delaware Personal Data Privacy Act (DPDPA), Tennessee Information
+      Protection Act (TIPA), Indiana Consumer Data Protection Act (INCDPA),
+      Iowa Consumer Data Protection Act (ICDPA), Nebraska Data Privacy Act
+      (NDPA), New Hampshire Data Privacy Act (NHDPA), Maryland Online Data
+      Privacy Act (MODPA), and Minnesota Consumer Data Privacy Act (MNCDPA).</p>
 
       <p>Depending on your state of residence and whether the relevant law
       applies to DotTracks, you may have rights to access, delete, correct, or
@@ -575,10 +610,11 @@
 
       <p><strong>Right to appeal.</strong> If we decline to take action on your
       privacy request and you reside in a state whose law grants an appeal
-      right (such as Virginia (VDPA), Colorado (CPA), or Connecticut (CTDPA)),
-      you may appeal our decision by replying to our response email or by
-      writing to hello.dottrack@outlook.com. We will respond to your appeal
-      within the time limits set by your state's law.</p>
+      right (such as Virginia (VCDPA), Colorado (CPA), Connecticut (CTDPA), or
+      other states with applicable appeal procedures), you may appeal our
+      decision by replying to our response email or by writing to
+      hello.dottrack@outlook.com. We will respond within the time period
+      required by the applicable state law.</p>
 
       <h2>Changes</h2>
 
@@ -594,6 +630,7 @@
         <li><strong>Firebase Authentication</strong> (anonymous sign-in)</li>
         <li><strong>Cloud Firestore</strong> (gameplay progress)</li>
         <li><strong>Firebase Analytics</strong> (pseudonymous app usage analytics, only after opt-in)</li>
+        <li><strong>Vercel</strong> — website hosting and technical access logs for dottracks.app.</li>
       </ul>
 
       <p>Google's privacy policy applies to data they process:
