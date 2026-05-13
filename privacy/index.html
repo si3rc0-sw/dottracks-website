@@ -45,6 +45,16 @@
       <p>DotTracks ("we", "us", "our") respects your privacy. This policy describes
       what data the app collects and how it is used.</p>
 
+      <h3>EU/UK representative</h3>
+
+      <p>DotTracks is based in Switzerland and may be accessed by users in the
+      EU/EEA and the UK. Based on our current limited, occasional, low-risk
+      processing and the fact that we do not process special categories of
+      personal data, we currently rely on the exemption under GDPR Art. 27(2)(a)
+      and UK GDPR Art. 27(2)(a), and have not appointed an EU or UK
+      representative. We will reassess this if our processing activities
+      materially change.</p>
+
       <h2>Scope of this policy</h2>
 
       <p>This Privacy Policy applies to:</p>
@@ -68,28 +78,36 @@
       The following data is processed:</p>
 
       <ul>
-        <li><strong>Pseudonymous user identifier</strong> — a random ID automatically generated
-        on first launch. It is not linked to your name, email, phone, or any
-        other personal identifier. Because the identifier is persistent across
-        app sessions on the same device, it qualifies as pseudonymous
-        (not anonymous) personal data under GDPR Art. 4(5).</li>
+        <li><strong>Pseudonymous user identifier</strong> — a random Firebase user ID
+        automatically generated on first launch. It is not linked to your name,
+        email address, phone number, or login account. If you uninstall the app
+        or clear app data, this identifier may be lost and your cloud-saved
+        progress may no longer be recoverable. Because the identifier is
+        persistent across app sessions on the same device, it qualifies as
+        pseudonymous (not anonymous) personal data under GDPR Art. 4(5).</li>
         <li><strong>Completed level IDs</strong> — which levels you have solved.</li>
         <li><strong>App usage events</strong> — screen views, basic interaction counters, and
         technical info (app version, device model, OS version, country, language).
         Collected via Firebase Analytics.</li>
-        <li><strong>Crash reports</strong> (if/when enabled) — anonymized technical info to
-        diagnose stability issues.</li>
+        <li><strong>Crash reports</strong> (if enabled in a future update) — pseudonymous
+        technical diagnostics such as crash traces, app version, device model,
+        operating system version, timestamps, and installation-related
+        identifiers used to diagnose stability issues.</li>
       </ul>
 
-      <p>We do <strong>not</strong> collect: your real name, email address, phone number,
-      contact list, photos, precise location, or any other personally
-      identifiable information.</p>
+      <p>We do not collect direct identifiers such as your real name, email
+      address, phone number, contact list, photos, or precise location. However,
+      the pseudonymous Firebase identifier, gameplay progress, analytics events,
+      and technical device information may qualify as personal data under
+      applicable privacy laws.</p>
 
       <h2>How we use your data and our legal basis</h2>
 
       <p>We process your data only for the purposes listed below, and only when
-      one of the legal bases set out in Art. 6(1) of the EU GDPR (and the
-      equivalent provisions of the Swiss FADP) applies.</p>
+      one of the legal bases set out in Art. 6(1) of the EU GDPR applies. Under
+      the Swiss FADP, we process personal data in accordance with the principles
+      of transparency, purpose limitation, proportionality, data security, and
+      good faith.</p>
 
       <h3>1. Saving and backing up your gameplay progress</h3>
 
@@ -111,23 +129,25 @@
         Firebase Analytics.</li>
         <li><strong>Purpose:</strong> Understand which levels are too hard or too easy,
         identify drop-off points, and improve the game design.</li>
-        <li><strong>Legal basis:</strong> Your consent — GDPR Art. 6(1)(a). Analytics is
-        disabled by default and only runs after you accept it on first
-        launch. You may withdraw your consent at any time in the in-app
-        Settings; withdrawal does not affect the lawfulness of processing
-        carried out before withdrawal.</li>
+        <li><strong>Legal basis:</strong> Your consent — GDPR Art. 6(1)(a). Firebase
+        Analytics is disabled by default. We only store or access
+        analytics-related identifiers or information on your device after you
+        give prior consent in the first-run consent dialog, as required under
+        applicable ePrivacy/PECR rules. You can withdraw this consent at any
+        time in Settings; withdrawal does not affect the lawfulness of
+        processing carried out before withdrawal.</li>
       </ul>
 
       <h3>3. Stability and bug fixing (only if and when enabled)</h3>
 
       <ul>
-        <li><strong>Data used:</strong> anonymized crash and error reports.</li>
+        <li><strong>Data used:</strong> pseudonymous crash and error reports.</li>
         <li><strong>Purpose:</strong> Diagnose and fix bugs and crashes.</li>
         <li><strong>Legal basis:</strong> Our legitimate interest in providing a stable app —
         GDPR Art. 6(1)(f). This interest is balanced against your right to
-        privacy by anonymizing the reports and using them solely for
-        technical purposes. You may object to this processing at any time
-        by contacting us at hello.dottrack@outlook.com.</li>
+        privacy by using only pseudonymous reports for technical purposes. You
+        may object to this processing at any time by contacting us at
+        hello.dottrack@outlook.com.</li>
       </ul>
 
       <p>We do not sell, rent, or share your data with advertisers or third
@@ -161,7 +181,9 @@
         Google LLC operate the Firebase infrastructure (Authentication,
         Cloud Firestore, Analytics) that stores and processes your data on
         our behalf, under data processing agreements that bind them to
-        GDPR-compliant terms.</li>
+        GDPR-compliant terms. Google may also process certain
+        service/diagnostic data independently according to its own privacy
+        policy and service terms.</li>
         <li><strong>Legal obligations.</strong> We may disclose data when required to do so
         by a valid legal instrument (court order, subpoena, or comparable
         measure issued by a competent Swiss or EU authority). Where lawful,
@@ -225,17 +247,26 @@
         <li>The <strong>Swiss-US Data Privacy Framework</strong>, recognized by the Swiss
         Federal Council from 15 September 2024, covering transfers from
         Switzerland to certified US recipients.</li>
+        <li>The <strong>UK Extension to the EU-US Data Privacy Framework</strong>, covering
+        transfers from the United Kingdom to certified US recipients.</li>
+        <li>The <strong>UK International Data Transfer Addendum (IDTA)</strong> issued by the
+        UK Information Commissioner, used as a fallback safeguard for transfers
+        from the United Kingdom.</li>
         <li><strong>Standard Contractual Clauses</strong> (SCCs) as adopted by the European
         Commission on 4 June 2021 (Decision (EU) 2021/914), used as a
-        fallback safeguard.</li>
+        general fallback safeguard.</li>
       </ul>
+
+      <p>For transfers from the United Kingdom, Google LLC relies on the UK
+      Extension to the EU-US Data Privacy Framework where applicable, and/or
+      the UK International Data Transfer Addendum or equivalent safeguards.</p>
 
       <p>You may obtain copies of these safeguards by contacting us.</p>
 
       <h2>Your rights</h2>
 
-      <p>Under the EU General Data Protection Regulation (GDPR) and the Swiss
-      Federal Act on Data Protection (FADP) you have the following rights:</p>
+      <p>Under the EU GDPR, the UK GDPR, and the Swiss FADP, where applicable,
+      you may have the following rights:</p>
 
       <ul>
         <li><strong>Right of access</strong> (GDPR Art. 15 / FADP Art. 25) — confirmation of
@@ -263,6 +294,11 @@
       <strong>hello.dottrack@outlook.com</strong>. We will respond within one month
       (GDPR Art. 12(3)).</p>
 
+      <p>Because DotTracks stores only pseudonymous gameplay progress, some
+      rights may be limited by the nature of the data. Where technically
+      feasible, we can provide, delete, or correct completed-level records
+      linked to your in-app pseudonymous user ID.</p>
+
       <h3>Identity verification</h3>
 
       <p>Because we operate on pseudonymous identifiers and do not hold your
@@ -276,6 +312,10 @@
       reasonable period, we are entitled to refuse to act on the request
       (GDPR Art. 12(6)).</p>
 
+      <p>Note: If you uninstall the app or clear app data before noting your
+      pseudonymous user ID, we will generally be unable to link you to your
+      data and may not be able to fulfill access or deletion requests.</p>
+
       <h3>Supervisory authorities</h3>
 
       <p>You may lodge a complaint with the data protection authority of your
@@ -288,6 +328,7 @@
         Informationsfreiheit (BfDI) or the data protection authority of
         your federal state — <a href="https://www.bfdi.bund.de">https://www.bfdi.bund.de</a></li>
         <li><strong>Austria:</strong> Datenschutzbehörde — <a href="https://www.dsb.gv.at">https://www.dsb.gv.at</a></li>
+        <li><strong>United Kingdom:</strong> Information Commissioner's Office (ICO) — <a href="https://ico.org.uk/">https://ico.org.uk/</a></li>
         <li><strong>Other EU/EEA:</strong> the supervisory authority of your member state.</li>
       </ul>
 
@@ -295,24 +336,22 @@
 
       <p>DotTracks does not respond to "Do Not Track" (DNT) browser signals,
       because no industry-standard meaning for these signals has been agreed
-      upon. We do honor the Global Privacy Control (GPC) signal where it
-      would otherwise apply to a "sale" or "sharing" of personal data — but
-      because we do <strong>not</strong> sell or share personal data in the CCPA/CPRA
-      sense, the practical outcome is the same in both directions: no such
-      processing takes place, with or without a signal.</p>
+      upon. We honor legally required opt-out preference signals, such as GPC,
+      where they apply to sale, sharing, targeted advertising, or other opt-out
+      processing covered by applicable law. DotTracks does not currently sell
+      personal data, share personal data for cross-context behavioral
+      advertising, or engage in targeted advertising.</p>
 
       <h2>Children</h2>
 
-      <p>DotTracks is <strong>not directed to children</strong>. We do not knowingly collect
-      data from children below the digital-consent age applicable in their
-      jurisdiction (typically 13 to 16 in the EU/EEA depending on member
-      state — for example, 16 in Germany and 13 in Belgium; 13 in the
-      United States under COPPA; 13 in the United Kingdom).</p>
-
-      <p>If you are below the applicable age, please do not use DotTracks. If
-      you are a parent or guardian and believe a child has provided us data,
-      contact <strong>hello.dottrack@outlook.com</strong> and we will delete the data
-      without undue delay.</p>
+      <p>DotTracks is intended for users aged 13 and older and is not directed
+      to children under 13. We do not knowingly collect personal data from
+      children under 13. We do not ask users to provide their age. If we learn
+      that we have collected personal data from a child under 13 without
+      required parental consent, we will delete it without undue delay. If
+      DotTracks is later offered to children or included in a child-directed
+      store category, we will implement the required parental consent and
+      child-privacy controls before doing so.</p>
 
       <h2>Notice to California residents (CCPA / CPRA)</h2>
 
@@ -321,6 +360,17 @@
       grants you additional rights. In the 12 months preceding the
       "Effective date" of this policy, we have not sold or shared your
       personal information in the CCPA sense, and we do not intend to do so.</p>
+
+      <p>Categories of personal information collected: identifiers
+      (pseudonymous Firebase user ID), internet or electronic network activity
+      information (app usage events, if analytics consent is given),
+      approximate location derived from country-level analytics, device and
+      diagnostics information, and gameplay progress. We do not collect
+      sensitive personal information.</p>
+
+      <p>We do not collect or use sensitive personal information as defined by
+      the CCPA/CPRA. Therefore, the right to limit the use and disclosure of
+      sensitive personal information does not currently apply to DotTracks.</p>
 
       <p>You have the right to:</p>
 
@@ -342,6 +392,11 @@
       the subject line "California Privacy Request". We will verify your
       request and respond within 45 days.</p>
 
+      <p>You may also submit a request through an authorized agent. We may
+      require proof that the agent is authorized to act on your behalf and may
+      still need to verify the request using your in-app pseudonymous user
+      ID.</p>
+
       <h2>Notice to residents of other US states</h2>
 
       <p>Several US states have enacted comprehensive privacy laws that grant
@@ -352,12 +407,16 @@
       Indiana (CDPA), Iowa (ICDPA), Nebraska (NDPA), New Hampshire (NHDPA),
       Maryland (MODPA),</strong> and <strong>Minnesota (MCDPA)</strong>.</p>
 
-      <p>To the extent any of these laws applies to you and to our processing
-      of your data:</p>
+      <p>Depending on your state of residence and whether the relevant law
+      applies to DotTracks, you may have rights to access, delete, correct, or
+      obtain a copy of your personal data, and to opt out of certain processing
+      such as sale, targeted advertising, or qualifying profiling. Not all
+      rights apply in all states.</p>
 
       <ul>
         <li>You have the access, correction, deletion, portability, and
-        objection rights described in the "Your rights" section above.</li>
+        objection rights described in the "Your rights" section above, to the
+        extent the relevant state law grants them.</li>
         <li>We do not sell your personal information, and we do not engage in
         targeted advertising based on cross-context behavioral tracking.</li>
         <li>To exercise any right, contact <strong>hello.dottrack@outlook.com</strong>. If
@@ -368,8 +427,10 @@
 
       <h2>Changes</h2>
 
-      <p>We may update this policy. The "Last updated" date will reflect any
-      change. Continued use of the app after a change means acceptance.</p>
+      <p>We may update this policy from time to time. The "Last updated" date
+      will reflect changes. If a change materially affects how we process your
+      data or requires consent, we will ask for your consent or provide another
+      legally required notice before the new processing starts.</p>
 
       <h2>Third parties</h2>
 
@@ -377,7 +438,7 @@
       <ul>
         <li><strong>Firebase Authentication</strong> (anonymous sign-in)</li>
         <li><strong>Cloud Firestore</strong> (gameplay progress)</li>
-        <li><strong>Firebase Analytics</strong> (anonymized usage)</li>
+        <li><strong>Firebase Analytics</strong> (pseudonymous app usage analytics, only after opt-in)</li>
       </ul>
 
       <p>Google's privacy policy applies to data they process:
