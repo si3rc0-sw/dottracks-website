@@ -52,6 +52,9 @@ body {
 }
 
 .wordmark {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
   font-weight: 700;
   font-size: 22px;
   letter-spacing: 4px;
@@ -60,8 +63,14 @@ body {
   text-transform: uppercase;
 }
 
+.wordmark-logo {
+  width: 30px;
+  height: 30px;
+  flex-shrink: 0;
+}
+
 .wordmark .accent {
-  color: var(--accent);
+  color: #5A6E94;
 }
 
 .nav {
@@ -192,7 +201,7 @@ tr:last-child td {
 }
 
 .hero h1 .accent {
-  color: var(--accent);
+  color: #5A6E94;
 }
 
 .hero .tagline {

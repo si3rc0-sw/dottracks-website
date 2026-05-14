@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Wordmark-Varianten — DotTracks</title>
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #08090F;
+    --panel: #0E1424;
+    --cell: #10182A;
+    --border: #1F2A44;
+    --text: #E8ECF4;
+    --muted: #8892B0;
+  }
+  * { box-sizing: border-box; }
+  body {
+    font-family: 'Rajdhani', system-ui, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    margin: 0;
+    padding: 40px 24px;
+  }
+  h1 {
+    text-align: center;
+    margin: 0 0 8px;
+    font-weight: 600;
+    letter-spacing: 1px;
+  }
+  .sub {
+    text-align: center;
+    color: var(--muted);
+    margin: 0 0 48px;
+    max-width: 720px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .grid {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fill, minmax(420px, 1fr));
+    max-width: 1400px;
+    margin: 0 auto;
+  }
+  .card {
+    background: var(--panel);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 24px 28px;
+  }
+  .label {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: var(--muted);
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    margin-bottom: 16px;
+  }
+  .swatch {
+    width: 14px;
+    height: 14px;
+    border-radius: 3px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+  }
+  .hex {
+    margin-left: auto;
+    font-family: monospace;
+    font-size: 12px;
+    color: var(--muted);
+  }
+  /* Wordmark row — logo + text */
+  .wm {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    font-weight: 700;
+    font-size: 28px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    color: var(--text);
+  }
+  .wm img {
+    width: 44px;
+    height: 44px;
+    flex-shrink: 0;
+  }
+  /* Smaller header-size preview */
+  .wm-sm {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: 700;
+    font-size: 20px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    color: var(--text);
+    margin-top: 14px;
+    padding-top: 14px;
+    border-top: 1px solid var(--border);
+  }
+  .wm-sm img {
+    width: 30px;
+    height: 30px;
+    flex-shrink: 0;
+  }
+  .sm-note {
+    font-size: 11px;
+    color: var(--muted);
+    letter-spacing: 1px;
+    margin-left: auto;
+  }
+
+  /* Color classes */
+  .c-current  { color: #4FC3F7; }  /* current blue */
+  .c-red      { color: #FF5370; }
+  .c-yellow   { color: #FFD740; }
+  .c-green    { color: #69F0AE; }
+  .c-purple   { color: #B388FF; }
+  .c-orange   { color: #FF9E40; }
+  .c-mint     { color: #80CBC4; }
+  .c-coral    { color: #FF8A80; }
+  .c-amber    { color: #FFCC80; }
+  .c-track    { color: #5A6E94; }
+  .c-slate    { color: #8892B0; }
+  .c-cool     { color: #A6ADBA; }
+  .c-light    { color: #C8D0DA; }
+  .c-pebble   { color: #94A3B8; }
+  .c-steel    { color: #64748B; }
+  .c-dark     { color: #475569; }
+  .c-darker   { color: #3B4255; }
+  .c-charcoal { color: #2D3748; }
+</style>
+</head>
+<body>
+  <h1>DotTracks — Wordmark + Logo Varianten</h1>
+  <p class="sub">Logo links, „DOT" in unterschiedlichen Farben. Jede Karte zeigt einmal die Hero-Größe und einmal die Header-Größe.</p>
+
+  <div class="grid">
+
+    <!-- Current (blue) for reference -->
+    <div class="card">
+      <div class="label">
+        <span class="swatch" style="background:#4FC3F7"></span>
+        Aktuell — Blau
+        <span class="hex">#4FC3F7</span>
+      </div>
+      <div class="wm"><img src="favicon.svg" alt=""><span><span class="c-current">DOT</span>TRACKS</span></div>
+      <div class="wm-sm"><img src="favicon.svg" alt=""><span><span class="c-current">DOT</span>TRACKS</span><span class="sm-note">Header-Größe</span></div>
+    </div>
+
+    <div class="card">
+      <div class="label">
+        <span class="swatch" style="background:#FF5370"></span>
+        Rot — Frame-Farbe
+        <span class="hex">#FF5370</span>
+      </div>
+      <div class="wm"><img src="favicon.svg" alt=""><span><span class="c-red">DOT</span>TRACKS</span></div>
+      <div class="wm-sm"><img src="favicon.svg" alt=""><span><span class="c-red">DOT</span>TRACKS</span><span class="sm-note">Header-Größe</span></div>
+    </div>
+
+    <div class="card">
+      <div class="label">
+        <span class="swatch" style="background:#FFD740"></span>
+        Gelb — Source-Farbe
+        <span class="hex">#FFD740</span>
+      </div>
+      <div class="wm"><img src="favicon.svg" alt=""><span><span class="c-yellow">DOT</span>TRACKS</span></div>
+      <div class="wm-sm"><img src="favicon.svg" alt=""><span><span class="c-yellow">DOT</span>TRACKS</span><span class="sm-note">Header-Größe</span></div>
+    </div>
+
+    <div class="card">
+      <div class="label">
+        <span class="swatch" style="background:#69F0AE"></span>
+        Grün — Mix/Success
+        <span class="hex">#69F0AE</span>
+      </div>
+      <div class="wm"><img src="favicon.svg" alt=""><span><span class="c-green">DOT</span>TRACKS</span></div>
+      <div class="wm-sm"><img src="favicon.svg" alt=""><span><span class="c-green">DOT</span>TRACKS</span><span class="sm-note">Header-Größe</span></div>
+    </div>
+
+    <div class="card">
+      <div class="label">
+        <span class="swatch" style="background:#B388FF"></span>
+        Lila — Mix-Color
+        <span class="hex">#B388FF</span>
+      </div>
+      <div class="wm"><img src="favicon.svg" alt=""><span><span class="c-purple">DOT</span>TRACKS</span></div>
+      <div class="wm-sm"><img src="favicon.svg" alt=""><span><span class="c-purple">DOT</span>TRACKS</span><span class="sm-note">Header-Größe</span></div>
+    </div>
+
+    <div class="card">
+      <div class="label">
+        <span class="swatch" style="background:#FF9E40"></span>
+        Orange — Warm
+        <span class="hex">#FF9E40</span>
+      </div>
+      <div class="wm"><img src="favicon.svg" alt=""><span><span class="c-orange">DOT</span>TRACKS</span></div>
+      <div class="wm-sm"><img src="favicon.svg" alt=""><span><span class="c-orange">DOT</span>TRACKS</span><span class="sm-note">Header-Größe</span></div>
+    </div>
+
+    <div class="card">
+      <div class="label">
+        <span class="swatch" style="background:#80CBC4"></span>
+        Mint — Splitter-Farbe
+        <span class="hex">#80CBC4</span>
+      </div>
+      <div class="wm"><img src="favicon.svg" alt=""><span><span class="c-mint">DOT</span>TRACKS</span></div>
+      <div class="wm-sm"><img src="favicon.svg" alt=""><span><span class="c-mint">DOT</span>TRACKS</span><span class="sm-note">Header-Größe</span></div>
+    </div>
+
+    <div class="card">
+      <div class="label">
+        <span class="swatch" style="background:#FF8A80"></span>
+        Coral — sanftes Rot
+        <span class="hex">#FF8A80</span>
+      </div>
+      <div class="wm"><img src="favicon.svg" alt=""><span><span class="c-coral">DOT</span>TRACKS</span></div>
+      <div class="wm-sm"><img src="favicon.svg" alt=""><span><span class="c-coral">DOT</span>TRACKS</span><span class="sm-note">Header-Größe</span></div>
+    </div>
+
+    <div class="card">
+      <div class="label">
+        <span class="swatch" style="background:#FFCC80"></span>
+        Amber — warmes Gelb
+        <span class="hex">#FFCC80</span>
+      </div>
+      <div class="wm"><img src="favicon.svg" alt=""><span><span class="c-amber">DOT</span>TRACKS</span></div>
+      <div class="wm-sm"><img src="favicon.svg" alt=""><span><span class="c-amber">DOT</span>TRACKS</span><span class="sm-note">Header-Größe</span></div>
+    </div>
+
+    <div class="card">
+      <div class="label">
+        <span class="swatch" style="background:#5A6E94"></span>
+        Track-Grau — Schienen-Farbe
+        <span class="hex">#5A6E94</span>
+      </div>
+      <div class="wm"><img src="favicon.svg" alt=""><span><span class="c-track">DOT</span>TRACKS</span></div>
+      <div class="wm-sm"><img src="favicon.svg" alt=""><span><span class="c-track">DOT</span>TRACKS</span><span class="sm-note">Header-Größe</span></div>
+    </div>
+
+    <div class="card">
+      <div class="label">
+        <span class="swatch" style="background:#64748B"></span>
+        Steel — kühles Grau
+        <span class="hex">#64748B</span>
+      </div>
+      <div class="wm"><img src="favicon.svg" alt=""><span><span class="c-steel">DOT</span>TRACKS</span></div>
+      <div class="wm-sm"><img src="favicon.svg" alt=""><span><span class="c-steel">DOT</span>TRACKS</span><span class="sm-note">Header-Größe</span></div>
+    </div>
+
+    <div class="card">
+      <div class="label">
+        <span class="swatch" style="background:#8892B0"></span>
+        Slate — aktuelles Muted-Grau
+        <span class="hex">#8892B0</span>
+      </div>
+      <div class="wm"><img src="favicon.svg" alt=""><span><span class="c-slate">DOT</span>TRACKS</span></div>
+      <div class="wm-sm"><img src="favicon.svg" alt=""><span><span class="c-slate">DOT</span>TRACKS</span><span class="sm-note">Header-Größe</span></div>
+    </div>
+
+    <div class="card">
+      <div class="label">
+        <span class="swatch" style="background:#94A3B8"></span>
+        Pebble — neutral
+        <span class="hex">#94A3B8</span>
+      </div>
+      <div class="wm"><img src="favicon.svg" alt=""><span><span class="c-pebble">DOT</span>TRACKS</span></div>
+      <div class="wm-sm"><img src="favicon.svg" alt=""><span><span class="c-pebble">DOT</span>TRACKS</span><span class="sm-note">Header-Größe</span></div>
+    </div>
+
+    <div class="card">
+      <div class="label">
+        <span class="swatch" style="background:#A6ADBA"></span>
+        Cool — leicht hell
+        <span class="hex">#A6ADBA</span>
+      </div>
+      <div class="wm"><img src="favicon.svg" alt=""><span><span class="c-cool">DOT</span>TRACKS</span></div>
+      <div class="wm-sm"><img src="favicon.svg" alt=""><span><span class="c-cool">DOT</span>TRACKS</span><span class="sm-note">Header-Größe</span></div>
+    </div>
+
+    <div class="card">
+      <div class="label">
+        <span class="swatch" style="background:#C8D0DA"></span>
+        Light — fast wie Text
+        <span class="hex">#C8D0DA</span>
+      </div>
+      <div class="wm"><img src="favicon.svg" alt=""><span><span class="c-light">DOT</span>TRACKS</span></div>
+      <div class="wm-sm"><img src="favicon.svg" alt=""><span><span class="c-light">DOT</span>TRACKS</span><span class="sm-note">Header-Größe</span></div>
+    </div>
+
+    <div class="card">
+      <div class="label">
+        <span class="swatch" style="background:#475569"></span>
+        Dark — gedämpft
+        <span class="hex">#475569</span>
+      </div>
+      <div class="wm"><img src="favicon.svg" alt=""><span><span class="c-dark">DOT</span>TRACKS</span></div>
+      <div class="wm-sm"><img src="favicon.svg" alt=""><span><span class="c-dark">DOT</span>TRACKS</span><span class="sm-note">Header-Größe</span></div>
+    </div>
+
+    <div class="card">
+      <div class="label">
+        <span class="swatch" style="background:#3B4255"></span>
+        Darker — sehr dezent
+        <span class="hex">#3B4255</span>
+      </div>
+      <div class="wm"><img src="favicon.svg" alt=""><span><span class="c-darker">DOT</span>TRACKS</span></div>
+      <div class="wm-sm"><img src="favicon.svg" alt=""><span><span class="c-darker">DOT</span>TRACKS</span><span class="sm-note">Header-Größe</span></div>
+    </div>
+
+    <div class="card">
+      <div class="label">
+        <span class="swatch" style="background:#2D3748"></span>
+        Charcoal — kaum sichtbar
+        <span class="hex">#2D3748</span>
+      </div>
+      <div class="wm"><img src="favicon.svg" alt=""><span><span class="c-charcoal">DOT</span>TRACKS</span></div>
+      <div class="wm-sm"><img src="favicon.svg" alt=""><span><span class="c-charcoal">DOT</span>TRACKS</span><span class="sm-note">Header-Größe</span></div>
+    </div>
+
+  </div>
+</body>
+</html>
