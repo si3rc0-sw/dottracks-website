@@ -24,6 +24,6 @@
     <line x1="228" y1="382" x2="284" y2="382"/>
   </g>
 
-  <rect x="18" y="18" width="476" height="476" rx="94" fill="none" stroke="#FF5370" stroke-width="6"/>
-  <rect x="3" y="3" width="506" height="506" rx="109" fill="none" stroke="#04081A" stroke-width="4"/>
+  <rect x="42" y="42" width="428" height="428" rx="86" fill="none" stroke="#FF5370" stroke-width="6"/>
+  <rect x="26" y="26" width="460" height="460" rx="98" fill="none" stroke="#04081A" stroke-width="4"/>
 </svg>
